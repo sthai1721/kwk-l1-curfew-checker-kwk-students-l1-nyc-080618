@@ -21,8 +21,8 @@ def complex_curfew_checker(time)
 elsif time>=11
   return "You're in trouble! Better get home quick!"
 else 
-  time=11-time.to_i
-  return "You have #{time} hour(s) left to keep having fun!"
+  return "Keep having fun!"
+  
 end
 end
 
@@ -33,8 +33,9 @@ def deluxe_curfew_checker(time)
 elsif time>=11
   return "You're in trouble! Better get home quick!"
 else 
-  time
-  return "Keep having fun!"
+  time=11-time.to_i
+  return "You have #{time} hour(s) left to keep having fun!"
+
 end
 end
 
