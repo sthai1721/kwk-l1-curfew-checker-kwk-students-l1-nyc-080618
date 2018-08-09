@@ -41,13 +41,13 @@ end
 
 def platinum_curfew_checker(current_time, curfew_time)
   
-  if curfew_time== 11 && current_time== 11
+  if curfew_time==current_time
  return "Time to apparate!"
-elsif curfew_time>curfew_time
+elsif current_time>curfew_time
   return "You're in trouble! Better get home quick!"
 else 
-  time=11-time.to_i
-  return "You have #{time} hour(s) left to keep having fun!"
+  current_time=curfew_time-current_time.to_i
+  return "You have #{current_time} hour(s) left to keep having fun!"
 
 end
 end
